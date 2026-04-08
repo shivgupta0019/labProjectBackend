@@ -5,7 +5,6 @@ const swaggerUi = require("swagger-ui-express");
 const swaggerSpec = require("./config/swagger");
 const app = express();
 
-
 app.use(express.json());
 app.use(cookieParser());
 
@@ -21,7 +20,5 @@ app.use("/api/raw-material", require("./routes/rawMaterialRoutes"));
 app.use("/api/test", require("./routes/testRoutes"));
 
 app.listen(3000, () => {
-    console.log("Server running on port 3000");
+  console.log("Server running on port 3000");
 });
-
-
